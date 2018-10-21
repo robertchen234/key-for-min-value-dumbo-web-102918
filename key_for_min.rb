@@ -5,17 +5,17 @@ def key_for_min_value(name_hash)
   if key_for_min_value.empty?
     nil 
   else 
-  max = 0
-  name_hash.each do | item, price |
-    if price > max
-      max = item 
+    max = 0
+    name_hash.each do | item, price |
+      if price > max
+        max = item 
+      end 
     end 
-  end 
-  min = max
-  name_hash.each do | item, price |
-    if price < min
-      min = item 
+    min = max
+    name_hash.each do | item, price |
+      if price < min
+        min = item 
+      end 
     end 
-  end 
-  min
+    min
 end
