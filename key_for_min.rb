@@ -3,9 +3,9 @@
 
 def key_for_min_value(hash)
   key = nil
-  min = 1000
+  min = nil
   hash.each do |item, price|
-     if price < min
+     if price < min or min.nil?
        min = price
        key = item
      end
