@@ -6,13 +6,13 @@ def key_for_min_value(name_hash)
     nil 
   else 
     max = 0
-    name_hash.each do | item, price |
+    name_hash.map do | item, price |
       if price > max
         max = price
       end 
     end 
     min = max
-    name_hash.each do | item, price |
+    name_hash.map do | item, price |
       if price < min
         min = item 
       end 
